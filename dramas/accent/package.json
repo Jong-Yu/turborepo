@@ -1,0 +1,28 @@
+{
+  "name": "@repo/accent",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 4000",
+    "build-storybook": "storybook build -s public",
+    "lint": "eslint . --max-warnings 0",
+    "generate:component": "turbo gen react-component"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@turbo/gen": "^1.12.4",
+    "@storybook/addon-interactions": "^7",
+    "@storybook/addon-actions": "^7",
+    "@storybook/addon-essentials": "^7",
+    "@storybook/addon-links": "^7",
+    "@storybook/blocks": "^7",
+    "@storybook/builder-vite": "^7",
+    "@storybook/react": "^7",
+    "@storybook/react-vite": "^7",
+    "storybook": "^7"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/typescript-config/app.json",
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "compilerOptions": {
+    "paths": {
+      "~/models*": ["../../dramas/board-core/src/models"]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+include:
+  - remote: 'https://gitlab.vizend.io/vizend-public/devops/gitlab-ci/-/raw/main/scripts/vizend-frontend-monorepo-ci.yml'
+
+variables:
+  DEV_BRANCH: 'main'
+  PRD_BRANCH: 'release'
+  BASE_VERSION: '5.0.0'
+  WORKSPACES: '@vizendjs/product-core,@vizendjs/product-ui,@vizendjs/kollect-product'
+  APPS: 'kollect-product'
+  GITOPS_ENABLED: 'false'
